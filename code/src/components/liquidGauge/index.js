@@ -83,7 +83,7 @@ export default class LiquidGauge extends React.Component {
             riseAnimation
             waveAnimation
             waveFrequency={2}
-            waveAmplitude={1}
+            waveAmplitude={5}
             gradient
             gradientStops={gradientStops}
             circleStyle={{
