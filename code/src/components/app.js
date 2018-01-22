@@ -1,6 +1,6 @@
 import React from "react"
 import uuid from "uuid/v4"
-import { BrowserRouter, Route } from "react-router-dom"
+import { HashRouter, Route } from "react-router-dom"
 import MainScreen from "./mainScreen"
 import SetSuperGoalScreen from "./setSuperGoalScreen"
 import Header from "./header"
@@ -108,7 +108,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <div className="App">
           <Header />
 
@@ -150,7 +150,7 @@ export default class App extends React.Component {
           } /> */}
 
         </div>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
